@@ -9,8 +9,8 @@ As dengue is carried by mosquitoes its transmission dynamics are highly related 
 The competition allows for any platform and ML-technique but evaluates the final result based on the mean absolute error (MAE). In this analysis the statistical computing programming language is used applying prophet algorithm for time series and various machine learning techniques such as support vector machine, tree-based techniques, and neural networks. 
   
 ## Technical approach of analysis  
-    
-**1. Exploration and preparation of data** 
+  
+**1. Exploration and preparation of data**
 - Set time-zone
 - Identify and tread/eliminate NAs
 - Create time series
@@ -18,18 +18,18 @@ The competition allows for any platform and ML-technique but evaluates the final
 - Conduct correlation analysis and identify relevant features
 - Conduct cross-correlation analysis and identify relevant lags of features
     
-**2. Feature-Engineering**    
+**2. Feature-Engineering**
 - Create lagged data of relevant features
   
-**3. Data splitting**  
+**3. Data splitting**
 - Split ratio: 75/25
   
-**4. Train models, evaluate, forecast**   
+**4. Train models, evaluate, forecast**
 - Select a bunch of algorithms
 - Train models using caret::caretList and automatic parameter tuning
 - Create and test model ensemble
 - Decide on model to be used for final decision based on performance metrics
 - Tune hyperparameters for the final model
   
-**5. Forecast and submit results**  
+**5. Forecast and submit results**
   
